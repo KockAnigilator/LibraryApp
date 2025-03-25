@@ -87,5 +87,18 @@ namespace LibraryApp.Сервисы
             Count++;
         }
 
+        /// <summary>
+        /// Очистка списка книг
+        /// </summary>
+        public void Clear()
+        {
+            // Обнуляем ссылки
+            _head = null; 
+            _tail = null;
+
+            // Обнуляем счетчик
+            Count = 0;
+        }
+
     }
 }
