@@ -16,11 +16,11 @@ namespace LibraryApp.Модели
         /// Конструктор узла
         /// </summary>
         /// <param name="book">Книга, которая будет храниться в этом узле</param>
-        public BookNode(Book data, BookNode next, BookNode previous)
+        public BookNode(Book book)
         {
-            Data = data;
-            Next = next;
-            Previous = previous;
+            Data = book;    // Сохраняем переданную книгу
+            Next = null;    // Пока не знаем следующий узел
+            Previous = null; // Пока не знаем предыдущий узел
         }
 
         public Book Data { get; set; } // Данные о книге, хранящиеся в этом узле
