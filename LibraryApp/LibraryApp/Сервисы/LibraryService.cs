@@ -1,6 +1,7 @@
 ﻿using LibraryApp.Модели;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -85,6 +86,32 @@ namespace LibraryApp.Сервисы
 
             // Увеличиваем счетчик элементов
             Count++;
+        }
+
+        /// <summary>
+        /// Поиск книги по автору и году издания
+        /// </summary>
+        /// <param name="author">Фамилия автора</param>
+        /// <param name="year">Год издания (0 - если год не важен)</param>
+        /// <returns>Найденный узел или null</returns>
+        public BookNode FindByAuthorAndYear(string author, int year)
+        {
+            // Начинаем с головы списка
+            BookNode current = _head;
+
+            while (current != null)
+            {
+                // Проверяем совпадение автора (без учета регистра) и года (если год указан)
+                if (current.Data.Author.Equals(author, StringComparison.OrdinalIgnoreCase)
+                    && (year == 0 || current.Data.Year == year))
+                {
+                    return current; // Нашли нужную книгу
+                }
+                current = current.Next; // Переходим к следующей книге
+            }
+
+            // Не нашли
+            return null;
         }
 
 
@@ -187,6 +214,119 @@ namespace LibraryApp.Сервисы
 
             // Удаление прошло успешно
             return true;
+        }
+
+
+        /// <summary>
+        /// Сортировка книг по году издания (пузырьковая сортировка)
+        /// </summary>
+        /// <returns>Голова отсортированного списка или null, если список пуст</returns>
+        public BookNode GetBooksSortedByYear()
+        {
+            // Если список пуст, возвращаем null
+            if (_head == null) return null;
+
+            bool swapped;
+            do
+            {
+                swapped = false;
+                BookNode current = _head;
+
+                // Проходим по списку
+                while (current.Next != null)
+                {
+                    // Если текущий год больше следующего, меняем книги местами
+                    if (current.Data.Year > current.Next.Data.Year)
+                    {
+                        // Меняем данные местами
+                        Book temp = current.Data;
+                        current.Data = current.Next.Data;
+                        current.Next.Data = temp;
+                        swapped = true; // Была перестановка
+                    }
+                    current = current.Next;
+                }
+            } while (swapped); // Повторяем, пока есть перестановки
+
+            return _head;
+        }
+
+        /// <summary>
+        /// Сохранение списка книг в файл
+        /// </summary>
+        /// <param name="filePath">Путь к файлу</param>
+        public void SaveToFile(string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                BookNode current = _head;
+
+                // Проходим по всем книгам
+                while (current != null)
+                {
+                    // Записываем данные книги через разделитель
+                    writer.WriteLine($"{current.Data.UDK}|{current.Data.Author}|{current.Data.Title}|{current.Data.Year}|{current.Data.Count}");
+                    current = current.Next;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Загрузка списка книг из файла
+        /// </summary>
+        /// <param name="filePath">Путь к файлу</param>
+        public void LoadFromFile(string filePath)
+        {
+            // Очищаем текущий список
+            Clear();
+
+            try
+            {
+                // Используем StreamReader для чтения из файла
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    string line;
+
+                    // Читаем файл построчно
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        // Разбиваем строку по разделителю |
+                        string[] parts = line.Split('|');
+
+                        // Должно быть 5 частей: УДК, автор, название, год, количество
+                        if (parts.Length == 5)
+                        {
+                            // Создаем новую книгу
+                            Book book = new Book
+                            {
+                                UDK = parts[0],
+                                Author = parts[1],
+                                Title = parts[2],
+                                Year = int.Parse(parts[3]),
+                                Count = int.Parse(parts[4])
+                            };
+
+                            // Добавляем книгу в конец списка
+                            AddToEnd(book);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // В случае ошибки выбрасываем исключение с понятным сообщением
+                throw new Exception("Ошибка загрузки файла: " + ex.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// Получение всех книг в списке
+        /// </summary>
+        /// <returns>Голова списка или null, если список пуст</returns>
+        public BookNode GetAllBooks()
+        {
+            return _head;
         }
 
         /// <summary>
