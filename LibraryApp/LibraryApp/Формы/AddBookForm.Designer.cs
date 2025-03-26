@@ -1,6 +1,6 @@
 ﻿namespace LibraryApp.Формы
 {
-    partial class Form2
+    partial class AddBookForm
     {
         /// <summary>
         /// Required designer variable.

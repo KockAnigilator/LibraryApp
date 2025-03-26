@@ -29,6 +29,10 @@ namespace LibraryApp.Сервисы
             Count = 0;      // Количество элементов = 0
         }
 
+        public LibraryService()
+        {
+        }
+
         /// <summary>
         /// Добавление книги в начало списка
         /// </summary>
