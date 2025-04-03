@@ -1,0 +1,37 @@
+﻿<Window x:Class="Library.Формы.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library.Формы"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Фамилия автора:" Grid.Row="0"/>
+        <TextBox x:Name="txtAuthor" Grid.Row="0" Margin="0,0,0,10" Grid.Column="1"/>
+
+        <Label Content="Год издания (0 - не учитывать):" Grid.Row="1"/>
+        <TextBox x:Name="txtYear" Grid.Row="1" Margin="0,0,0,10" Grid.Column="1"/>
+
+        <Button Content="Найти" Grid.Row="2" Click="Search_Click" Margin="0,0,0,10"/>
+
+        <DataGrid x:Name="resultsGrid" Grid.Row="3" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="УДК" Binding="{Binding UDK}" Width="80"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="120"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="60"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Закрыть" Grid.Row="4" Click="Close_Click" HorizontalAlignment="Right" Width="80"/>
+    </Grid>
+</Window>
