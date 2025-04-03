@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library.Формы"
         mc:Ignorable="d"
-        Title="SearchWindow" Height="450" Width="800">
+        Title="Поиск книги" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,15 +15,20 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Фамилия автора:" Grid.Row="0"/>
-        <TextBox x:Name="txtAuthor" Grid.Row="0" Margin="0,0,0,10" Grid.Column="1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="Год издания (0 - не учитывать):" Grid.Row="1"/>
-        <TextBox x:Name="txtYear" Grid.Row="1" Margin="0,0,0,10" Grid.Column="1"/>
+        <Label Content="Фамилия автора:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtAuthor" Grid.Row="0" Grid.Column="1" Margin="5,0,0,10"/>
 
-        <Button Content="Найти" Grid.Row="2" Click="Search_Click" Margin="0,0,0,10"/>
+        <Label Content="Год издания (0 - не учитывать):" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtYear" Grid.Row="1" Grid.Column="1" Margin="5,0,0,10"/>
 
-        <DataGrid x:Name="resultsGrid" Grid.Row="3" AutoGenerateColumns="False" IsReadOnly="True">
+        <Button Content="Найти" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Search_Click" Margin="0,0,0,10" HorizontalAlignment="Left" Width="80"/>
+
+        <DataGrid x:Name="resultsGrid" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="УДК" Binding="{Binding UDK}" Width="80"/>
                 <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="120"/>
@@ -32,6 +37,6 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Закрыть" Grid.Row="4" Click="Close_Click" HorizontalAlignment="Right" Width="80"/>
+        <Button Content="Закрыть" Grid.Row="4" Grid.Column="1" Click="Close_Click" HorizontalAlignment="Right" Width="80"/>
     </Grid>
 </Window>
