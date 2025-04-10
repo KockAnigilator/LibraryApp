@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|c:\\users\\\u043E\u0431\u0430\u043C\u0430\\documents\\farmer_52team\\libraryapp\\libraryapp\\library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u043C\u043E\u0434\u0435\u043B\u0438\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u043C\u043E\u0434\u0435\u043B\u0438\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|c:\\users\\\u043E\u0431\u0430\u043C\u0430\\documents\\farmer_52team\\libraryapp\\libraryapp\\library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0444\u043E\u0440\u043C\u044B\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\documents\\github\\libraryapp\\libraryapp\\library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u043C\u043E\u0434\u0435\u043B\u0438\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u043C\u043E\u0434\u0435\u043B\u0438\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0444\u043E\u0440\u043C\u044B\\searchwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\library\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\\u043C\u043E\u0434\u0435\u043B\u0438\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u043C\u043E\u0434\u0435\u043B\u0438\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\library\\\u043C\u043E\u0434\u0435\u043B\u0438\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{315E3BED-01BF-43EE-AC13-03F8C3BEC8E2}|Library\\Library.csproj|solutionrelative:library\\\u043C\u043E\u0434\u0435\u043B\u0438\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,65 +49,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SearchWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
               "RelativeDocumentMoniker": "Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
               "RelativeToolTip": "Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAD8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T07:09:33.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAUwGoBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T11:37:52.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "SearchWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
               "RelativeDocumentMoniker": "Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
               "RelativeToolTip": "Library\\\u0424\u043E\u0440\u043C\u044B\\SearchWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-03T07:09:05.512Z",
+              "WhenOpened": "2025-04-03T07:09:05.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
+              "RelativeDocumentMoniker": "Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
+              "RelativeToolTip": "Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAmwNYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:01:30.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LibraryService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
-              "RelativeDocumentMoniker": "Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
-              "RelativeToolTip": "Library\\\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\LibraryService.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAkwEoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:01:30.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
               "RelativeToolTip": "Library\\\u0424\u043E\u0440\u043C\u044B\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-03T07:00:41.556Z",
@@ -115,11 +119,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\App.config",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\App.config",
               "RelativeDocumentMoniker": "Library\\App.config",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\App.config",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\App.config",
               "RelativeToolTip": "Library\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -127,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\App.xaml",
               "RelativeDocumentMoniker": "Library\\App.xaml",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\App.xaml",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\App.xaml",
               "RelativeToolTip": "Library\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-03T07:10:36.984Z",
@@ -139,38 +143,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": ".gitattributes",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\.gitattributes",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\.gitattributes",
+              "RelativeDocumentMoniker": "..\\.gitattributes",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\.gitattributes",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\.gitattributes",
+              "RelativeToolTip": "..\\.gitattributes",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
               "WhenOpened": "2025-04-03T07:20:49.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "BookNode.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
               "RelativeDocumentMoniker": "Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
               "RelativeToolTip": "Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\BookNode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:01:25.683Z"
+              "WhenOpened": "2025-04-03T07:01:25.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
               "RelativeDocumentMoniker": "Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
-              "ToolTip": "C:\\Users\\\u041E\u0431\u0430\u043C\u0430\\Documents\\Farmer_52Team\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Documents\\GitHub\\LibraryApp\\LibraryApp\\Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
               "RelativeToolTip": "Library\\\u043C\u043E\u0434\u0435\u043B\u0438\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:01:19.148Z"
+              "WhenOpened": "2025-04-03T07:01:19.148Z",
+              "EditorCaption": ""
             }
           ]
         }

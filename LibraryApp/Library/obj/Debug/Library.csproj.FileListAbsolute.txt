@@ -32,3 +32,11 @@ C:\Users\Обама\Documents\Farmer_52Team\LibraryApp\LibraryApp\Library\obj\De
 C:\Users\Обама\Documents\Farmer_52Team\LibraryApp\LibraryApp\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
 C:\Users\Обама\Documents\Farmer_52Team\LibraryApp\LibraryApp\Library\obj\Debug\Library.exe
 C:\Users\Обама\Documents\Farmer_52Team\LibraryApp\LibraryApp\Library\obj\Debug\Library.pdb
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.csproj.AssemblyReference.cache
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Формы\MainWindow.g.cs
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Формы\SearchWindow.g.cs
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\App.g.cs
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library_MarkupCompile.cache
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library_MarkupCompile.lref
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.exe
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.pdb
