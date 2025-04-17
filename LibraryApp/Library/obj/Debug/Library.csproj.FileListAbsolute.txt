@@ -49,3 +49,5 @@ C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug
 C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.Properties.Resources.resources
 C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.csproj.GenerateResource.cache
 C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Формы\HelpWindow.baml
+C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\obj\Debug\Формы\HelpWindow.g.cs

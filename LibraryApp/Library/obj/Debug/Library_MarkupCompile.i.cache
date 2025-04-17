@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Дмитрий\Documents\GitHub\LibraryApp\LibraryApp\Library\App.xaml
-2862405863
+3-1515858969
 
-102072413362
+11-613650282
 13-38814620
-Формы\MainWindow.xaml;Формы\SearchWindow.xaml;
+Формы\HelpWindow.xaml;Формы\MainWindow.xaml;Формы\SearchWindow.xaml;
 
-False
+True
 

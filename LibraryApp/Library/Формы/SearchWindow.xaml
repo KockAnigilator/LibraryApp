@@ -3,9 +3,50 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Library.Формы"
         mc:Ignorable="d"
-        Title="" Height="450" Width="800">
+        Title="Поиск книг" Height="500" Width="800"
+        WindowStartupLocation="CenterOwner"
+        FontFamily="Segoe UI" FontSize="14">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF4285F4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#FFF5F5F5"/>
+        </Style>
+    </Window.Resources>
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -20,23 +61,26 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Фамилия автора:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtAuthor" Grid.Row="0" Grid.Column="1" Margin="5,0,0,10"/>
+        <Label Content="Фамилия автора:" Grid.Row="0" Grid.Column="0"/>
+        <TextBox x:Name="txtAuthor" Grid.Row="0" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Год издания (0 - не учитывать):" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtYear" Grid.Row="1" Grid.Column="1" Margin="5,0,0,10"/>
+        <Label Content="Год издания (0 - не учитывать):" Grid.Row="1" Grid.Column="0"/>
+        <TextBox x:Name="txtYear" Grid.Row="1" Grid.Column="1" Margin="5"/>
 
-        <Button Content="Найти" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Click="Search_Click" Margin="0,0,0,10" HorizontalAlignment="Left" Width="80"/>
+        <Button Content="Найти" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                Click="Search_Click" HorizontalAlignment="Left" Width="100"/>
 
-        <DataGrid x:Name="resultsGrid" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="resultsGrid" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="УДК" Binding="{Binding UDK}" Width="80"/>
-                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="120"/>
+                <DataGridTextColumn Header="УДК" Binding="{Binding UDK}" Width="100"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="200"/>
                 <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
-                <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="60"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="Закрыть" Grid.Row="4" Grid.Column="1" Click="Close_Click" HorizontalAlignment="Right" Width="80"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Закрыть" Width="100" Click="Close_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

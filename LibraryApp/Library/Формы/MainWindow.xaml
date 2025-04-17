@@ -5,31 +5,97 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library"
         mc:Ignorable="d"
-        Title="" Height="450" Width="800">
+        Title="Библиотечная система" Height="650" Width="950"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI" FontSize="14">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF4285F4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Opacity="0.3"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+        </Style>
+
+        <Style TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="#FFDDDDDD"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF4285F4"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#FFF5F5F5"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Меню действий -->
-        <StackPanel Grid.Column="0" Background="#FFE0E0E0">
-            <Label Content="Меню действий" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
+        <!-- Левая панель - меню действий -->
+        <Border Grid.Column="0" Background="#FFF5F5F5" BorderBrush="#FFE0E0E0" BorderThickness="0,0,1,0">
+            <StackPanel>
+                <Label Content="Библиотечная система" FontSize="16" FontWeight="Bold" 
+                       HorizontalAlignment="Center" Margin="0,15,0,20" Foreground="#FF4285F4"/>
 
-            <Button Content="Добавить в начало" Margin="10,5" Click="AddToFront_Click"/>
-            <Button Content="Добавить в конец" Margin="10,5" Click="AddToEnd_Click"/>
-            <Button Content="Добавить по алфавиту" Margin="10,5" Click="AddSorted_Click"/>
-            <Button Content="Добавить после книги" Margin="10,5" Click="AddAfterBook_Click"/>
-            <Button Content="Добавить перед книгой" Margin="10,5" Click="AddBeforeBook_Click"/>
-            <Button Content="Удалить книгу" Margin="10,5" Click="RemoveBook_Click"/>
-            <Button Content="Сохранить в файл" Margin="10,5" Click="SaveToFile_Click"/>
-            <Button Content="Загрузить из файла" Margin="10,5" Click="LoadFromFile_Click"/>
-            <Button Content="Сортировать по году" Margin="10,5" Click="SortByYear_Click"/>
-            <Button Content="Поиск книги" Margin="10,5" Click="SearchBook_Click"/>
-            <Button Content="Показать все книги" Margin="10,5" Click="ShowAllBooks_Click"/>
-        </StackPanel>
+                <Label Content="Управление книгами" FontWeight="Bold" Margin="10,0,10,5"/>
+                <Button Content="Добавить в начало" Click="AddToFront_Click"/>
+                <Button Content="Добавить в конец" Click="AddToEnd_Click"/>
+                <Button Content="Добавить по алфавиту" Click="AddSorted_Click"/>
+                <Button Content="Удалить книгу" Click="RemoveBook_Click"/>
 
-        <!-- Основное содержимое -->
+                <Label Content="Сортировка и поиск" FontWeight="Bold" Margin="10,15,10,5"/>
+                <Button Content="Сортировать по году" Click="SortByYear_Click"/>
+                <Button Content="Поиск книги" Click="SearchBook_Click"/>
+                <Button Content="Показать все книги" Click="ShowAllBooks_Click"/>
+
+                <Label Content="Работа с файлами" FontWeight="Bold" Margin="10,15,10,5"/>
+                <Button Content="Сохранить в файл" Click="SaveToFile_Click"/>
+                <Button Content="Загрузить из файла" Click="LoadFromFile_Click"/>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                    <Button Content="Справка" Width="90" Background="#FF34A853" Click="Help_Click"/>
+                    <Button Content="Выход" Width="90" Background="#EA4335" Margin="10,0,0,0" Click="Exit_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Основная область содержимого -->
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -37,8 +103,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <!-- Форма для ввода данных -->
-            <GroupBox Grid.Row="0" Header="Данные книги" Margin="10">
+            <!-- Форма ввода данных -->
+            <GroupBox Grid.Row="0" Header="Данные книги">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -47,7 +113,6 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
@@ -67,25 +132,22 @@
 
                     <Label Content="Количество:" Grid.Row="2" Grid.Column="0"/>
                     <TextBox x:Name="txtCount" Grid.Row="2" Grid.Column="1" Margin="5"/>
-
-                    <Label Content="Поиск по УДК:" Grid.Row="3" Grid.Column="0" x:Name="lblSearchUDK"/>
-                    <TextBox x:Name="txtSearchUDK" Grid.Row="3" Grid.Column="1" Margin="5" Visibility="Collapsed"/>
                 </Grid>
             </GroupBox>
 
             <!-- Список книг -->
-            <DataGrid x:Name="booksGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid x:Name="booksGrid" Grid.Row="1">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="УДК" Binding="{Binding UDK}" Width="100"/>
-                    <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="150"/>
+                    <DataGridTextColumn Header="Автор" Binding="{Binding Author}" Width="200"/>
                     <DataGridTextColumn Header="Название" Binding="{Binding Title}" Width="*"/>
-                    <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="60"/>
-                    <DataGridTextColumn Header="Кол-во" Binding="{Binding Count}" Width="60"/>
+                    <DataGridTextColumn Header="Год" Binding="{Binding Year}" Width="80"/>
+                    <DataGridTextColumn Header="Кол-во" Binding="{Binding Count}" Width="80"/>
                 </DataGrid.Columns>
             </DataGrid>
 
             <!-- Статусная строка -->
-            <StatusBar Grid.Row="2">
+            <StatusBar Grid.Row="2" Background="#FFF5F5F5">
                 <StatusBarItem>
                     <TextBlock x:Name="statusText">Готово</TextBlock>
                 </StatusBarItem>
@@ -93,7 +155,7 @@
                     <TextBlock>Книг в библиотеке:</TextBlock>
                 </StatusBarItem>
                 <StatusBarItem HorizontalAlignment="Right">
-                    <TextBlock x:Name="booksCount">0</TextBlock>
+                    <TextBlock x:Name="booksCount" FontWeight="Bold">0</TextBlock>
                 </StatusBarItem>
             </StatusBar>
         </Grid>

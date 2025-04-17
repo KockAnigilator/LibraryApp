@@ -140,160 +140,23 @@ namespace Library.Формы
             }
         }
 
-        private void AddAfterBook_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                lblSearchUDK.Visibility = Visibility.Visible;
-                txtSearchUDK.Visibility = Visibility.Visible;
-
-                var result = MessageBox.Show("Введите УДК книги, после которой нужно добавить новую книгу, затем нажмите кнопку еще раз",
-                    "Добавление после книги", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-
-                if (result == MessageBoxResult.OK)
-                {
-                    Book newBook = GetBookFromForm();
-                    string udk = txtSearchUDK.Text;
-
-                    // Находим книгу, после которой нужно добавить
-                    var current = libraryService.GetAllBooks();
-                    while (current != null && current.Data.UDK != udk)
-                    {
-                        current = current.Next;
-                    }
-
-                    if (current == null)
-                    {
-                        throw new Exception("Книга с указанным УДК не найдена!");
-                    }
-
-                    // Создаем новый узел
-                    BookNode newNode = new BookNode(newBook);
-
-                    // Устанавливаем связи
-                    newNode.Next = current.Next;
-                    newNode.Previous = current;
-
-                    if (current.Next != null)
-                    {
-                        current.Next.Previous = newNode;
-                    }
-                    else
-                    {
-                        // Если добавляем после последнего элемента, обновляем хвост
-                        libraryService.GetType().GetField("_tail", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                            .SetValue(libraryService, newNode);
-                    }
-
-                    current.Next = newNode;
-
-                    // Обновляем счетчик
-                    libraryService.GetType().GetProperty("Count").SetValue(libraryService, (int)libraryService.GetType().GetProperty("Count").GetValue(libraryService) + 1);
-
-                    UpdateBooksList();
-                    ClearForm();
-                    lblSearchUDK.Visibility = Visibility.Collapsed;
-                    txtSearchUDK.Visibility = Visibility.Collapsed;
-                    txtSearchUDK.Text = "";
-                    ShowStatus($"Книга добавлена после книги с УДК {udk}");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void AddBeforeBook_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                lblSearchUDK.Visibility = Visibility.Visible;
-                txtSearchUDK.Visibility = Visibility.Visible;
-
-                var result = MessageBox.Show("Введите УДК книги, перед которой нужно добавить новую книгу, затем нажмите кнопку еще раз",
-                    "Добавление перед книгой", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-
-                if (result == MessageBoxResult.OK)
-                {
-                    Book newBook = GetBookFromForm();
-                    string udk = txtSearchUDK.Text;
-
-                    // Находим книгу, перед которой нужно добавить
-                    var current = libraryService.GetAllBooks();
-                    while (current != null && current.Data.UDK != udk)
-                    {
-                        current = current.Next;
-                    }
-
-                    if (current == null)
-                    {
-                        throw new Exception("Книга с указанным УДК не найдена!");
-                    }
-
-                    // Создаем новый узел
-                    BookNode newNode = new BookNode(newBook);
-
-                    // Устанавливаем связи
-                    newNode.Previous = current.Previous;
-                    newNode.Next = current;
-
-                    if (current.Previous != null)
-                    {
-                        current.Previous.Next = newNode;
-                    }
-                    else
-                    {
-                        // Если добавляем перед первым элементом, обновляем голову
-                        libraryService.GetType().GetField("_head", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                            .SetValue(libraryService, newNode);
-                    }
-
-                    current.Previous = newNode;
-
-                    // Обновляем счетчик
-                    libraryService.GetType().GetProperty("Count").SetValue(libraryService, (int)libraryService.GetType().GetProperty("Count").GetValue(libraryService) + 1);
-
-                    UpdateBooksList();
-                    ClearForm();
-                    lblSearchUDK.Visibility = Visibility.Collapsed;
-                    txtSearchUDK.Visibility = Visibility.Collapsed;
-                    txtSearchUDK.Text = "";
-                    ShowStatus($"Книга добавлена перед книги с УДК {udk}");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
         private void RemoveBook_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                lblSearchUDK.Visibility = Visibility.Visible;
-                txtSearchUDK.Visibility = Visibility.Visible;
-
-                var result = MessageBox.Show("Введите УДК книги для удаления, затем нажмите кнопку еще раз",
-                    "Удаление книги", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-
-                if (result == MessageBoxResult.OK)
+                string udk = PromptForUDK("Введите УДК книги для удаления:");
+                if (!string.IsNullOrEmpty(udk))
                 {
-                    string udk = txtSearchUDK.Text;
                     bool removed = libraryService.Remove(udk);
-
                     if (removed)
                     {
                         UpdateBooksList();
-                        lblSearchUDK.Visibility = Visibility.Collapsed;
-                        txtSearchUDK.Visibility = Visibility.Collapsed;
-                        txtSearchUDK.Text = "";
                         ShowStatus($"Книга с УДК {udk} удалена");
                     }
                     else
                     {
-                        throw new Exception("Книга с указанным УДК не найдена!");
+                        MessageBox.Show("Книга с указанным УДК не найдена!", "Ошибка",
+                            MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
             }
@@ -301,6 +164,16 @@ namespace Library.Формы
             {
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private string PromptForUDK(string prompt)
+        {
+            var dialog = new InputDialog(prompt, this);
+            if (dialog.ShowDialog() == true)
+            {
+                return dialog.Answer;
+            }
+            return null;
         }
 
         private void SaveToFile_Click(object sender, RoutedEventArgs e)
@@ -372,6 +245,54 @@ namespace Library.Формы
         {
             UpdateBooksList();
             ShowStatus("Отображены все книги");
+        }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            var helpWindow = new HelpWindow();
+            helpWindow.Owner = this;
+            helpWindow.ShowDialog();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                Close();
+            }
+        }
+    }
+
+    public class InputDialog : Window
+    {
+        public string Answer { get; private set; }
+
+        public InputDialog(string prompt, Window owner)
+        {
+            this.Width = 300;
+            this.Height = 150;
+            this.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            this.Owner = owner;
+            this.Title = "Ввод данных";
+
+            var stackPanel = new StackPanel { Margin = new Thickness(10) };
+
+            var promptText = new TextBlock { Text = prompt, Margin = new Thickness(0, 0, 0, 10) };
+            var inputBox = new TextBox { Height = 23 };
+            var okButton = new Button { Content = "OK", Width = 75, Margin = new Thickness(0, 10, 0, 0) };
+
+            okButton.Click += (sender, e) =>
+            {
+                Answer = inputBox.Text;
+                DialogResult = true;
+            };
+
+            stackPanel.Children.Add(promptText);
+            stackPanel.Children.Add(inputBox);
+            stackPanel.Children.Add(okButton);
+
+            this.Content = stackPanel;
         }
     }
 }
